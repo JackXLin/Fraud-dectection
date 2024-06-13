@@ -31,7 +31,7 @@ The correlation matrix below shows the relationships between different features 
 ![Correlation Matrix](./correlation_matrix.jpg)
 
 Key observations from the correlation matrix:
-- The `amt` (transaction amount) has a notable correlation with `is_fraud` (fraudulent transaction), indicating that higher transaction amounts are more likely to be fraudulent.
+- The `amt` (transaction amount) has a notable correlation with `is_fraud` (fraudulent transaction).
 - Other features show relatively low correlations with `is_fraud`, suggesting that fraudulent transactions are not strongly influenced by individual cardholder demographic features or location data alone.
 
 ### Model Performance
