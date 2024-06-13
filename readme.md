@@ -35,14 +35,15 @@ Key observations from the correlation matrix:
 - Other features show relatively low correlations with `is_fraud`, suggesting that fraudulent transactions are not strongly influenced by individual cardholder demographic features or location data alone.
 
 ### Model Performance
-- **Accuracy**: The Random Forest model achieved an accuracy of 98.5% on the test set. This indicates the proportion of transactions correctly classified as either fraudulent or genuine.
-
+- **Accuracy**: The Random Forest model achieved an impressive accuracy of 98.5% on the test set. This high accuracy indicates that the model is highly effective in correctly classifying transactions as either fraudulent or genuine. The accuracy metric highlights the model's robustness and reliability in identifying fraudulent transactions, providing a strong foundation for further development and deployment in real-world scenarios.
 
 ### Hyperparameter Tuning
 Hyperparameter tuning was conducted to improve the model's performance. The following hyperparameters were optimised:
 - **Number of Trees in the Forest (n_estimators)**: Various values were tested to find the optimal number of trees.
 - **Maximum Depth of Trees (max_depth)**: Different depths were evaluated to prevent overfitting.
 - **Minimum Samples per Split (min_samples_split)**: This parameter was tuned to ensure that nodes have a minimum number of samples before splitting.
+- **Minimum Samples per Leaf (min_samples_leaf)**: This parameter was tuned to ensure that leaf nodes have a minimum number of samples.
+- **Maximum Features (max_features)**: Different numbers of features were considered for splitting at each node.
 
 The optimal hyperparameters were found to be:
 - `n_estimators`: 500
